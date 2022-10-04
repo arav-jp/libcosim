@@ -6,7 +6,7 @@ from os import path
 
 class LibcosimConan(ConanFile):
     name = "libcosim"
-    author = "osp"
+    author = "arav"
     exports = "version.txt"
     scm = {
         "type": "git",
@@ -53,7 +53,7 @@ class LibcosimConan(ConanFile):
 
     def requirements(self):
         if self.options.proxyfmu:
-            self.requires("proxyfmu/0.2.7@osp/stable")
+            self.requires("proxyfmu/0.2.9@osp/stable")
 
     def imports(self):
         binDir = os.path.join("output", str(self.settings.build_type).lower(), "bin")

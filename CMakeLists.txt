@@ -8,8 +8,8 @@ message("Current libcosim version: ${CMAKE_PROJECT_VERSION}\n")
 # ==============================================================================
 
 option(BUILD_SHARED_LIBS "Build shared libraries instead of static libraries" ON)
-option(LIBCOSIM_TREAT_WARNINGS_AS_ERRORS "Treat compiler warnings as errors" ON)
-option(LIBCOSIM_BUILD_TESTS "Build test suite" ON)
+option(LIBCOSIM_TREAT_WARNINGS_AS_ERRORS "Treat compiler warnings as errors" OFF)
+option(LIBCOSIM_BUILD_TESTS "Build test suite" OFF)
 option(LIBCOSIM_BUILD_APIDOC "Build API documentation (requires Doxygen)" ON)
 option(LIBCOSIM_BUILD_PRIVATE_APIDOC "Build private API documentation (only used if LIBCOSIM_BUILD_APIDOC=ON)" OFF)
 option(LIBCOSIM_STANDALONE_INSTALLATION "Whether to build for a standalone installation (Linux only; sets a relative RPATH)" OFF)
